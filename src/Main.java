@@ -39,12 +39,11 @@ public class Main {
                     break;
                 case 2:
                     for (int i = 0; i < products.size(); i++) {
-
                         products.get(i).displayData();
                     }
                     break;
                 case 3:
-                    System.out.println("mảng sau khi sắp xếp sản phẩm theo lợi nhuận tăng dần");
+                    System.out.println("Mảng sau khi sắp xếp sản phẩm theo lợi nhuận tăng dần là: ");
                     Collections.sort(products);
                     break;
                 case 4:
@@ -57,6 +56,7 @@ public class Main {
                         }
                     }
                     System.out.println("Mảng sau khi xóa là : " + products);
+                    break;
                 case 5:
                     input.nextLine();
                     System.out.println("Nhập sản phẩm cần tìm kiếm:");
