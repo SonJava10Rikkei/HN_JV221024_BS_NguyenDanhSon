@@ -49,13 +49,14 @@ public class Main {
                 case 4:
                     System.out.println("Nhập sản phẩm cần xóa:");
                     int removeId = input.nextInt();
-
                     for (int i = 0; i < products.size(); i++) {
                         if (products.get(i).getPrductid() == removeId) {
                             products.remove(i);
                         }
                     }
-                    System.out.println("Mảng sau khi xóa là : " + products);
+                    for (int i = 0; i < products.size(); i++) {
+                        products.get(i).displayData();
+                    }
                     break;
                 case 5:
                     input.nextLine();
